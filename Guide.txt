@@ -1,0 +1,14 @@
+=========== TEXT INSIGHT HUB PROJECT ===============
+
+=== start a server
+py -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+
+=== ingestion layer
+I designed the ingestion layer to support multiple grouping strategies for unstructured text, including no grouping, inline headers, and banner-style headers, with validation heuristics to avoid accidental grouping on noisy text like URLs.
+
+
+
+=== To call it the API  (Testing from Swagger)
+http://127.0.0.1:8000/docs
+{"group_strategy":"header","header_mode":"banner","split_mode":"blank_lines","default_group":"unknown"}
