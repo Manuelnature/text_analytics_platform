@@ -1,34 +1,16 @@
-# Python
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# If you store DB under backend/app/
+backend/app/*.db
+.local/
+
+# Python cache
 __pycache__/
-*.py[cod]
-*.pyd
-*.pyo
-*.pdb
-*.egg-info/
-dist/
-build/
+*.pyc
 
-# Environments
-.venv/
-venv/
-env/
-ENV/
-*.env
-
-# OS / Editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Logs
-*.log
-
-# Jupyter
-.ipynb_checkpoints/
-
-# SQLite DB
-backend/app/app.db
-
-# Node (if you add frontend later)
-node_modules/
+# Frontend build + node modules
+frontend/node_modules/
+frontend/dist/
